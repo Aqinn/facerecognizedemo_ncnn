@@ -1,6 +1,6 @@
 # facerecognizedemo_ncnn
 
-![](https://img.shields.io/badge/license-MIT-blue) [![https://github.com/liguiyuan/mobilefacenet-ncnn](https://img.shields.io/badge/FaceDetect-RetainFace-yellow)](https://github.com/JavisPeng/ncnn-andriod-retainface) [![](https://img.shields.io/badge/FaceRecognize-MobileFaceNet-orange)](https://github.com/liguiyuan/mobilefacenet-ncnn)
+[![](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Aqinn/facerecognizedemo_ncnn/blob/master/LICENSE) [![https://github.com/liguiyuan/mobilefacenet-ncnn](https://img.shields.io/badge/FaceDetect-RetainFace-yellow)](https://github.com/JavisPeng/ncnn-andriod-retainface) [![](https://img.shields.io/badge/FaceRecognize-MobileFaceNet-orange)](https://github.com/liguiyuan/mobilefacenet-ncnn)
 
 Android 端的人脸识别 demo
 
@@ -37,4 +37,4 @@ https://github.com/JavisPeng/ncnn-andriod-retainface
 
 ## License
 
-MIT © Aqinn
+[MIT](https://github.com/Aqinn/facerecognizedemo_ncnn/blob/master/LICENSE) © [Aqinn](https://github.com/Aqinn)
