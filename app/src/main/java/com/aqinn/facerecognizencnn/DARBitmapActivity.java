@@ -271,35 +271,6 @@ public class DARBitmapActivity extends Activity {
         return temp;
     }
 
-    private void copyBigDataToSD(String strOutFileName) throws IOException {
-        Log.i(TAG, "start copy file " + strOutFileName);
-        File sdDir = Environment.getExternalStorageDirectory();//获取跟目录
-        File file = new File(sdDir.toString() + "/facem/");
-        if (!file.exists()) {
-            file.mkdir();
-        }
-
-        String tmpFile = sdDir.toString() + "/facem/" + strOutFileName;
-        File f = new File(tmpFile);
-        if (f.exists()) {
-            Log.i(TAG, "file exists " + strOutFileName);
-            return;
-        }
-        InputStream myInput;
-        java.io.OutputStream myOutput = new FileOutputStream(sdDir.toString() + "/facem/" + strOutFileName);
-        myInput = this.getAssets().open(strOutFileName);
-        byte[] buffer = new byte[1024];
-        int length = myInput.read(buffer);
-        while (length > 0) {
-            myOutput.write(buffer, 0, length);
-            length = myInput.read(buffer);
-        }
-        myOutput.flush();
-        myInput.close();
-        myOutput.close();
-        Log.i(TAG, "end copy file " + strOutFileName);
-    }
-
     public void askForPermission() {
         //检测权限
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
